@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'DigiGrotesk LT BoldCondensed';
+    src: url('DigiGroteskLT-BoldCondensed.eot');
+    src: local('Digi Grotesk LT Bold Condensed'), local('DigiGroteskLT-BoldCondensed'),
+        url('DigiGroteskLT-BoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('DigiGroteskLT-BoldCondensed.woff2') format('woff2'),
+        url('DigiGroteskLT-BoldCondensed.woff') format('woff'),
+        url('DigiGroteskLT-BoldCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
