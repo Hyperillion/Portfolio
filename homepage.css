@@ -1,16 +1,66 @@
 @charset "utf-8";
 /* CSS Document */
 @media screen {}
+header, body, td, th {
+  color: #0F0F0F;
+}
+a:link {
+  color: #0F0F0F;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: #0F0F0F;
+}
+a:hover {
+  text-decoration: underline;
+  color: #fc5531;
+}
+a:active {
+  text-decoration: none;
+  color: #0F0F0F;
+}
+header {
+  height: 10%;
+  background-attachment: fixed;
+}
 body {
   background-color: #0f0f0f;
+  padding-top: 0px; /*	position:fixed;*/
+  padding-left: 0px;
+}
+.nav_bar {
+  position: fixed;
+  /*    background-color: rgba(255,255,255, 0.5);*/
+  height: 100px;
+  width: 100%;
+  margin-top: auto;
+  margin-left: auto;
+  top: 2px;
+  left: 2px;
 }
 .nav_table {
-  width: 40%;
+  width: 50%;
   float: right;
-  padding-right: 5%;
   text-align: center;
-  /*	align-self: center;*/
+  bottom: 0px;
+  padding-top: 40px;
 }
-.table_element {
+.nav_element {
   font-family: Technology;
+  font-size: 30px;
+}
+.logo {
+  font-family: Peg_holes;
+  font-size: 50px;
+  width: 30%;
+  position: absolute;
+}
+.dot_bg {
+  font-family: Peg_holes;
+  font-size: 50px;
+  position: absolute;
+}
+.image_bg {
+  position: static;
 }
