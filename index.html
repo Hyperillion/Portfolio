@@ -4,35 +4,61 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>This is Andy Ye</title>
-<link href="homepage.css" rel="stylesheet" type="text/css">
-<link href="Family/font.css" rel="stylesheet" type="text/css">
+<title>Hi, IMAndy Ye</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="assets/Family/font.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Smooch+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
-<header>
-  <div class ="nav_bar"> 
-<!--
-	  <div class = "dot_bg">
-	  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-	  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-	  </div>
--->
+
+<body>
+	<!-- <div id="index_bg"></div> -->
+	<div id="text_bg"><span><br />Hi,<br />Im Andy</span></div>
+	<div id="artist_description">
+    <h2>Artist Description </h2>
+    <p>Andy is a creative visual artist with exploration and discovery. 
+      As a junior student from New York University Shanghai, Andy has education experience in art,
+       science.and liberal arts. To Andy, visual art is an open doorto his inner world. In addition,
+        it's an abstract way to express his unique critical thought. In his past artistic creation, 
+        Andy was particularly concerned about humane attentiveness and trying to use the subjective 
+        similarity andconflict between art and reality to express the objective problems in reality. 
+        His works cover many genres andfields. At present, the field of his greatest attainments is 
+        photography, while he is learning and practicing creativecoding and moving images. In addition, 
+        Andy also dabblesin the field of graphic design and robotics interaction.</p>
+
+	<div class ="nav_bar"> 
     <div class="logo">
-      <div>Andy</div>
-      <div>YeJR</div>
+      <div id="logo_text1">Andy</div>
+      <!-- <div id="logo_text2">ndy</div> -->
+      <div id="logo_text3">YeJR</div>
     </div>
-    <!--nav table-->
     <table class="nav_table" width="100%" border="0">
       <tbody>
         <tr>
+          <th class="nav_element" scope="col"><a href="#">Main Page</a></th>
           <th class="nav_element" scope="col"><a href="#">Projects</a></th>
-          <th class="nav_element" scope="col"><a href="#">Images</a></th>
+          <th class="nav_element" scope="col"><a href="#">Photos</a></th>
           <th class="nav_element" scope="col"><a href="#">About Me</a></th>
         </tr>
       </tbody>
     </table>
   </div>
-</header>
-<body>
-	<img class = "image_bg" src="assets/pics/backpic.jpg" width="100%" alt=""/>
+
+
+  <script>
+    const background = document.querySelector("#text_bg")
+    document.addEventListener('scroll',()=>{
+      const scrollY = window.scrollY
+
+      if(scrollY !== 0){
+        // background.style.filter = `blur(calc(${scrollY}px / 100))`
+        background.style.backgroundPosition = `calc(50% + ${scrollY}px*0.5) calc(50% + ${scrollY}px*1)`
+        
+      }else{
+        // background.style.backgroundPosition = `50% 30%`
+      }
+    })
+  </script>
 </body>
 </html>

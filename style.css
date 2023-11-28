@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen {}
+
+header, body, td, th {
+  color: #0F0F0F;
+}
+a:link {
+	color: #0F0F0F;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0F0F0F;
+}
+a:hover {
+	text-decoration: underline;
+	color: #d91e29;
+}
+a:active {
+	text-decoration: none;
+	color: #0F0F0F;
+}
+
+h2{
+	margin-top: 10px;
+	/* padding: 0; */
+	font-size: 42px;
+	font-family: Technology;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+p{
+	font-size: 32px;
+	font-family: bebas;
+	font-family: 'Smooch Sans', sans-serif;
+	/* font-weight: 1000; */
+	letter-spacing: 2px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F0F0F0;
+	height: 200vh;
+}
+
+.nav_bar {
+	position: fixed;
+	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	height: 125px;
+	width: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+	top: 0px;
+	left: 0px;
+}
+
+.nav_table {
+  	width: 600px;
+  	float: right;
+  	text-align: center;
+  	bottom: 0px;
+	padding-top: 40px;
+}
+
+.nav_element {
+  font-family: Technology;
+  font-size: 30px;
+}
+
+.logo {
+	display: flex;
+	flex-wrap: wrap;
+	margin:0;
+	padding: 0;
+	color: #0F0F0F;
+    font-family: Peg_holes;
+	font-weight: 500;
+    font-size: 50px;
+    width: 15%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.dot_bg {
+  font-family: Peg_holes;
+  font-size: 50px;
+  position: absolute;
+}
+
+/* #logo_text1{
+	width: 33px;
+	color: #d91e29;
+}
+#logo_text2{
+	width: 100px;
+} */
+
+
+#artist_description{
+	position: absolute;
+	top: 135vh;
+	width: 80%;
+	color: #F0F0F0;
+	/* left: 50%;
+	transform: translateX(-50%); */
+	padding: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* border-radius: 10px; */
+}
+
+#text_bg {
+	background-image: url(assets/pics/backpic.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	/* width: 100%; */
+	/* filter: brightness(50%); */
+	/* background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)); */
+	height: 200vh;
+	font-family: Technology;
+	font-weight: 500;
+	font-size: 23vw;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+}
+
+#text_bg::before{
+	content: '';
+	background-size: cover;
+	background-image: url(assets/pics/backpic.jpg);
+	background-position: 50% 50%;
+	position: absolute;
+	/* filter: blur(10px); */
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -99;
+}
