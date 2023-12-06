@@ -2,7 +2,7 @@
 /* CSS Document */
 @media screen {}
 
-header, body, td, th {
+header, td, th {
   color: #0F0F0F;
 }
 a:link {
@@ -33,7 +33,6 @@ h2{
 
 p{
 	font-size: 32px;
-	font-family: bebas;
 	font-family: 'Smooch Sans', sans-serif;
 	/* font-weight: 1000; */
 	letter-spacing: 2px;
@@ -42,13 +41,16 @@ p{
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #F0F0F0;
+    background-color: #0F0F0F;
 	height: 200vh;
+	cursor: url(assets/cur/down.png), auto;
 }
 
 .nav_bar {
 	position: fixed;
-	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	background: 
+	linear-gradient(rgba(255, 255, 255, 0.6), 
+	rgba(255, 255, 255, 0));
 	height: 125px;
 	width: 100%;
 	margin-top: 0px;
@@ -91,14 +93,7 @@ body {
   position: absolute;
 }
 
-/* #logo_text1{
-	width: 33px;
-	color: #d91e29;
-}
-#logo_text2{
-	width: 100px;
-} */
-
+/* index page */
 
 #artist_description{
 	position: absolute;
@@ -143,3 +138,12 @@ body {
 	right: 0;
 	z-index: -99;
 }
+
+#logo_text1{
+	width: 33px;
+	color: #d91e29;
+}
+#logo_text2{
+	width: 100px;
+}
+
