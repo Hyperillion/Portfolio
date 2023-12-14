@@ -164,7 +164,8 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-caption {
-  font-size: 13px;
+  font-family: Technology;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1em;
 }
@@ -174,10 +175,11 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-number {
+  font-family: Technology;
   display: block;
   clear: left;
   padding-bottom: 1em;
-  font-size: 12px;
+  font-size: 14px;
   color: #999999;
 }
 
