@@ -296,7 +296,7 @@ body {
 }
 
 .pics{
-    width: 350px;
+    width: 20vw;;
     height: auto;
     margin: 30px;
     margin-left: 60px;
@@ -361,7 +361,7 @@ body {
 }
 
 .header{
-	margin-top: 35vh;
+	margin-top: 25vh;
 	width: 100%;
 	text-align: center;
 	margin-bottom: 80px;
