@@ -157,7 +157,7 @@ body {
 	float: right;
 	text-align: center;
 	bottom: 0px;
-  	padding-top: 3.5vh;
+  	padding-top: 3vh;
 }
 
 .nav_bar a:link {
@@ -183,7 +183,7 @@ body {
 
 .nav_element {
 	font-family: Technology;
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .logo {
@@ -194,7 +194,7 @@ body {
 	color: #0F0F0F;
     font-family: Peg_holes;
 	font-weight: 500;
-    font-size: 35px;
+    font-size: 30px;
     width: 200px;
     position: absolute;
     left: 10px;
