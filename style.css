@@ -353,7 +353,7 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: #000000;
-	background-image: url(assets/pics/backpicBlur.jpg);
+	/* background-image: url(assets/pics/backpicBlur.jpg); */
 	/* filter: blur(4px); */
 }
 
