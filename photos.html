@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imaging</title>
+    <title>Photos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
     <div class="profileBG"></div>
 
     <div id="main">
-        <h2 class="pageTitle"></br><span>P</span>hoto</br>Gallery</h1>
+        <h2 class="pageTitle"></br></br><span>P</span>hoto</br>Gallery</h1>
 
 <!-- documentary -->
     <div class="hoverBox">
@@ -329,12 +329,12 @@
             
         // }
 
-        if(scrollY <= 900){
-            linear.style.backgroundColor = `rgba(0, 0, 0, calc(${scrollY-500}/500))`;
-            nav.style.backgroundColor = `rgba(230,230,230, calc(${scrollY-500}/500))`;
+        if(scrollY <= 500){
+            linear.style.backgroundColor = `rgba(0, 0, 0, calc(${scrollY-100}/500))`;
+            nav.style.backgroundColor = `rgba(230,230,230, calc(${scrollY}/500))`;
         }else{
             linear.style.backgroundColor = `rgba(0, 0, 0, 0.8))`;
-            nav.style.backgroundColor = `rgba(230,230,230, 0.8)`;
+            nav.style.backgroundColor = `rgba(230,230,230, 1)`;
         }
         })
   </script>

@@ -5,12 +5,171 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imaging</title>
+    <title>Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Smooch+Sans:wght@400&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="assets/Family/font.css" rel="stylesheet" type="text/css">
     <link href="lightbox/dist/css/lightbox.css" rel="stylesheet"/>
 </head>
+
+<body>
+    <div class="shell" id="shell">
+        <div class="header">
+            <h1 class="title"><span>Highlight</span></h1>
+            <h1 class="title">Projects</h1>
+            <h2 class="subtitle">BY Andy Ye</h2>
+        </div>
+        <div class="timeline">
+            <div class="item" data-text="May 2023">
+                <div class="content">
+                    <img src="assets/pics/projects/beyondInkwash/beyondInkwash.png" alt="" class="img">
+                    <h2 class="contentTitle">Beyond the Ink-wash</h2>
+                    <p class="description">An Interactive and Generative Project that draw real-time Ink-wash Paintings</p>
+                </div>
+            </div>
+            <div class="item" data-text="February 2023">
+                <div class="content">
+                    <img src="assets/pics/projects/galaxy/galaxy.png" alt="" class="img">
+                    <h2 class="contentTitle">Galaxy</h2>
+                    <p class="description">An interactive coding practise about gravity simulation environment</p>
+                </div>
+            </div>
+            <div class="item" data-text="December 2022">
+                <div class="content">
+                    <img src="assets/pics/projects/cureMonster/curemonster.png" alt="" class="img">
+                    <h2 class="contentTitle">Cure Monster</h2>
+                    <p class="description">A social robot provides emotional and physical company to users</p>
+                </div>
+            </div>
+            <div class="item" data-text="October 2022">
+                <div class="content">
+                    <img src="assets/pics/projects/unusualAgent/unusualAgent.jpg" alt="" class="img">
+                    <h2 class="contentTitle">Unusual Agent</h2>
+                    <p class="description">A legal education film about the unauthorized use of the official seal</p>
+                </div>
+            </div>
+            <div class="item" data-text="June 2022">
+                <div class="content">
+                    <img src="assets/pics/projects/antidote/antidote.jpg" alt="" class="img">
+                    <h2 class="contentTitle">Antidote</h2>
+                    <p class="description">A short drama film about the distortion of human nature under the pandemic</p>
+                </div>
+            </div>
+            <div class="item" data-text="May 2022">
+                <div class="content">
+                    <img src="assets/pics/projects/imaging/imaging.png" alt="" class="img">
+                    <h2 class="contentTitle">Imaging</h2>
+                    <p class="description">A web based photography simulation project</p>
+                </div>
+            </div>
+            <div class="item" data-text="April 2022">
+                <div class="content">
+                    <img src="assets/pics/projects/life/LIFE.png" alt="" class="img">
+                    <h2 class="contentTitle">LIFE: From small To Big</h2>
+                    <p class="description">An interactive coding artwork that presents the whole procedure of the life of cells</p>
+                </div>
+            </div>
+            <div class="item" data-text="February 2022">
+                <div class="content">
+                    <img src="assets/pics/projects/webSketchpad/sketchpad.jpg" alt="" class="img">
+                    <h2 class="contentTitle">Web Sketchpad</h2>
+                    <p class="description">An online sketchpad with several basic functions</p>
+                </div>
+            </div>
+            <div class="item" data-text="September 2021">
+                <div class="content">
+                    <img src="assets/pics/projects/leaveTheDoorOpen/ldto.jpg" alt="" class="img">
+                    <h2 class="contentTitle">Leave the Door Open</h2>
+                    <p class="description">A drama film about a vague love story</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="nav_bar" id="projectNav">
+        <div  class="logo" >
+        <a href="index.html">
+          <!-- <div id="logo_text1">A</div> -->
+          <div id="logo_text2"><span>A</span>ndy</div>
+          <div>YeJR</div>
+          <!-- <div id="logo_text3">YeJR</div> -->
+        </a>
+      </div>
+        <table class="nav_table" width="100%" border="0">
+          <tbody>
+            <tr>
+              <th class="nav_element" scope="col"><a href="projects.html">Projects</a></th>
+              <th class="nav_element" scope="col"><a href="photos.html">Photos</a></th>
+              <th class="nav_element" scope="col"><a href="index.html">About Me</a></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+    
+        (function($){
+            $.fn.timeline = function (){
+                var selectors = {
+                    id: $(this),
+                    item: $(this).find(".item"),
+                    activeClass: "item--active",
+                    img: ".img"
+                };
+                selectors.item.eq(0).addClass(selectors.activeClass);
+                selectors.id.css(
+                    "background-image",
+                    "url(" +
+                    selectors.item.first()
+                        .find(selectors.img)
+                        .attr("src") + 
+                    ")"
+                );
+                var itemLength = selectors.item.length;
+                $(window).scroll(function(){
+                    var max, min;
+                    var pos = $(this).scrollTop() + $(this).height()/3;
+                    selectors.item.each(function(i){
+                        min = $(this).offset().top;
+                        max = $(this).height() + $(this).offset().top;
+                        var that = $(this);
+                        if(i == itemLength - 2 && pos > min + $(this).height() / 2) {
+                            selectors.item.removeClass(selectors.activeClass);
+                            selectors.id.css(
+                                "background-image",
+                                "url(" +
+                                selectors.item.last()
+                                    .find(selectors.img)
+                                    .attr("src") +
+                                ")"
+                            );
+                            selectors.item.last().addClass(selectors.activeClass);
+                        }
+
+                        else if(pos<= max - 10 && pos >= min) {
+                            selectors.id.css(
+                                "background-image",
+                                "url(" +
+                                $(this)
+                                .find(selectors.img)
+                                .attr("src") +
+                                ")"
+                            );
+                            selectors.item.removeClass(selectors.activeClass);
+                            $(this).addClass(selectors.activeClass);
+                        }
+                    })
+                })
+            }
+        })(jQuery)
+
+        $("#shell").timeline();
+    </script>
+
+</body>
+</html>
