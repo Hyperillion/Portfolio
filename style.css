@@ -352,6 +352,8 @@ body {
 	transition: 0.3s ease 0s;
 	background-attachment: fixed;
 	background-size: cover;
+	background-color: #000000;
+	background-image: url(assets/pics/backpicBlur.jpg);
 	/* filter: blur(4px); */
 }
 
@@ -380,8 +382,12 @@ body {
 	margin: 0;
 }
 
-.title:hover span:first-child{
+.title span:first-child{
 	color: #d91e29;
+}
+
+.title:hover span:first-child{
+
 	text-shadow:
 	0 0 10px #d91e29,
 	0 0 20px #d91e29;
@@ -479,7 +485,6 @@ body {
 	opacity: 1;
 	transform: translateY(0);
 	filter: blur(0px);
-	
 }
 
 .item--active:before{
