@@ -9,8 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/cur/AY.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Smooch+Sans:wght@400&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Smooch+Sans:wght@200;500;700&family=Yellowtail&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css">
     <link href="assets/Family/font.css" rel="stylesheet" type="text/css">
     <link href="lightbox/dist/css/lightbox.css" rel="stylesheet"/>
@@ -135,7 +134,18 @@
                         min = $(this).offset().top;
                         max = $(this).height() + $(this).offset().top;
                         var that = $(this);
-                        if(i == itemLength - 2 && pos > min + $(this).height() / 2) {
+                        if(i == 0 && pos >= $(this).height()/1.5 && pos < $(this).height()*2){
+                            selectors.id.css(
+                                "background-image",
+                                "url(" +
+                                $(this)
+                                .find(selectors.img)
+                                .attr("src") +
+                                ")"
+                            );
+                            selectors.item.removeClass(selectors.activeClass);
+                            $(this).addClass(selectors.activeClass);
+                        }else if(i == itemLength - 2 && pos > min + $(this).height() / 2) {
                             selectors.item.removeClass(selectors.activeClass);
                             selectors.id.css(
                                 "background-image",
@@ -148,7 +158,7 @@
                             selectors.item.last().addClass(selectors.activeClass);
                         }
 
-                        else if(pos<= max - 10 && pos >= min && pos >= $(this).height()) {
+                        else if(pos<= max - 10 && pos >= min) {
                             selectors.id.css(
                                 "background-image",
                                 "url(" +
@@ -159,7 +169,7 @@
                             );
                             selectors.item.removeClass(selectors.activeClass);
                             $(this).addClass(selectors.activeClass);
-                        }else if(pos < $(this).height()){
+                        }else if(pos < $(this).height()/1.5){
                             selectors.id.css(
                                 "background-image",
                                 "url(assets/pics/backpic.jpg)"
