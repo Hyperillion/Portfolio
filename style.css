@@ -5,7 +5,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	transition: 0.15s;
+	/* transition: 0.15s; */
 	caret-color: transparent;
 }
 
@@ -143,6 +143,8 @@ body {
 	cursor: url(assets/cur/down.png), default;
 }
 
+
+
 .copyright{
 	padding: 50px;
 	font-family: 'Smooch Sans', sans-serif;
@@ -170,7 +172,7 @@ body {
 	float: right;
 	text-align: center;
 	bottom: 0px;
-  	padding-top: 25px;
+  	margin-top: 25px;
 }
 
 .nav_bar a:link {
@@ -282,7 +284,7 @@ body {
     color: #f0f0f0;
     margin-bottom: 0px;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 60px;
     /* width:1200px; */
     left:0px;
 }
@@ -303,6 +305,7 @@ body {
     /* font-weight: 800; */
     color: #ffffff;
     margin: 30px;
+	padding-left: 30px;
     top: 1000px;
     width: 100%;
     left:0px;
@@ -378,9 +381,10 @@ body {
 
 .header{
 	margin-top: 25vh;
-	width: 100%;
-	text-align: center;
+	/* width: 100%; */
+	text-align: left;
 	margin-bottom: 80px;
+	margin-left: 60px;
 	position: relative;
 }
 
@@ -404,10 +408,10 @@ body {
 
 .timeline{
 	display: flex;
-	margin: 0 auto;
+	margin: 0 5px;
 	flex-wrap: wrap;
 	flex-direction: column;
-	max-width: 700px;
+	max-width: 30%;
 	position: relative;
 }
 
@@ -417,7 +421,7 @@ body {
 	font-size: 50px;
 	margin: -50px 0 0 0;
 	transition: 0.4s;
-	padding: 0 10px;
+	padding: 20px 10px 0px 10px;
 	box-sizing: border-box;
 	color:#F0F0F0;
 }
@@ -426,7 +430,7 @@ body {
 	margin: 0;
 	font-size: 20px;
 	box-sizing: border-box;
-	color: rgba(235,235,235,1);
+	color: #F0F0F0;
 	line-height: 25px;
 	font-family: 'Smooch Sans', sans-serif;
 	/* opacity: 0; */
@@ -453,6 +457,8 @@ body {
 	display: flex;
 	position: relative;
 	transform: translateY(-80px);
+
+	align-self: flex-end;
 }
 
 .item:before{
@@ -464,18 +470,26 @@ body {
 	text-shadow:
 	0 0 10px #d91e29,
 	0 0 20px #d91e29;
-	border-left: 2px solid #d91e29;
+	/* border-left: 2px solid #d91e29; */
 	top: 70%;
 	margin-top: -5px;
-	padding-left: 15px;
+	/* padding-left: 15px; */
 	opacity: 0;
-	right: calc(-100% - 56px);
+	/* right: calc(-100% - 56px); */
 	font-size: 30px;
 	font-family: Technology;
 	letter-spacing: 5px;
+
+	right: auto;
+	text-align: right;
+	left: calc(-100% - 50px);
+	padding-left: 0;
+	border-left: none;
+	border-right: 2px solid #d91e29;
+	padding-right: 15px;
 }
 
-.item:nth-child(even){
+/* .item:nth-child(even){
 	align-self: flex-end;
 }
 
@@ -488,7 +502,7 @@ body {
 	border-right: 2px solid #d91e29;
 	padding-right: 15px;
 	
-}
+} */
 
 .item--active{
 	opacity: 1;
