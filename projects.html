@@ -101,7 +101,7 @@
         </div>
         <div class="timeline">
             <div class="item" data-text="July 2024">
-                <button class="showPopup" onclick="displayPopup('./ProjectPages/gaudi-vision.html')">
+                <button class="showPopup" onclick="displayPopup('./assets/pics/projects/gaudi-vision/gaudi-vision.html')">
                     <div class="content">
                         <img src="assets/pics/projects/gaudi-vision/gaudi-vision.jpg" alt="" class="img">
                         <h2 class="contentTitle">Gaudi Vision</h2>
@@ -111,7 +111,7 @@
                 </button>
             </div>
             <div class="item" data-text="May 2024">
-                <button class="showPopup" onclick="displayPopup('./ProjectPages/seen.html')">
+                <button class="showPopup" onclick="displayPopup('./assets/pics/projects/seen/seen.html')">
                     <div class="content">
                         <img src="assets/pics/projects/seen/seen.jpg" alt="" class="img">
                         <h2 class="contentTitle">SEE(N)</h2>
@@ -312,7 +312,7 @@
                             );
                             selectors.item.removeClass(selectors.activeClass);
                             $(this).addClass(selectors.activeClass);
-                        } else if (pos < $(this).height() / 1.5) {
+                        } else if (pos < $(this).height() / 1) {
                             selectors.id.css(
                                 "background-image",
                                 "url(assets/pics/backpic.jpg)"

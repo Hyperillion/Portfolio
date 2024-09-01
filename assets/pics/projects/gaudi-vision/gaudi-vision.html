@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gaudi Vision</title>
+  <meta charset="utf-8">
+  <!-- <title>carousel模块快速使用</title> -->
+  <link href="//unpkg.com/layui@2.9.16/dist/css/layui.css" rel="stylesheet">
+  <style>
+    body {
+      /* font-family: Arial, sans-serif; */
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px;
+      text-align: left;
+    }
+
+    h1 {
+      margin: 5% 0;
+    }
+
+    h2 {
+      margin: 5% 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    .popupBox {
+      color: #fff;
+      margin: 5% 10%;
+      border-radius: 5px;
+    }
+
+    .layui-layer {
+      background: rgba(5, 5, 5, 0.9);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="popupBox">
+    <h1>Gaudi Vision</h1>
+    <div class="layui-carousel" id="test1">
+      <div carousel-item>
+        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
+        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
+        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
+        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
+        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
+        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
+      </div>
+    </div>
+
+    <h2>Project Background</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc auctor, aliquet nisl sed, tincidunt nunc.
+      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
+      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
+      auctor, aliquet nisl sed, tincidunt nunc.
+      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
+      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
+      auctor, aliquet nisl sed, tincidunt nunc.
+      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
+      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
+      auctor, aliquet nisl sed, tincidunt nunc.
+      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
+      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
+      auctor, aliquet nisl sed, tincidunt nunc.
+      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
+      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
+      auctor, aliquet nisl sed, tincidunt nunc.
+      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
+      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
+      auctor, aliquet nisl sed, tincidunt nunc.
+      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
+      justo auctor, aliquam nunc id, aliquet nisl.</p>
+    <h2>Project Images</h2>
+
+  </div>
+
+
+  <script src="//unpkg.com/layui@2.9.16/dist/layui.js"></script>
+  <script>
+    layui.use('carousel', function () {
+      var carousel = layui.carousel;
+      //建造实例
+      carousel.render({
+        elem: '#test1'
+        , width: '100%' //设置容器宽度
+        , height: '60vh'
+        , arrow: 'always' //始终显示箭头
+        //,anim: 'updown' //切换动画方式
+      });
+    });
+  </script>
+</body>
+
+</html>
