@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <!-- <title>carousel模块快速使用</title> -->
   <link href="//unpkg.com/layui@2.9.16/dist/css/layui.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
   <style>
     body {
       /* font-family: Arial, sans-serif; */
@@ -15,17 +16,27 @@
 
     header {
       background-color: #000000;
-      color: #fff;
+      color: #f0f0f0;
       padding: 20px;
       text-align: left;
     }
 
     h1 {
       margin: 5% 0;
+      color: #f0f0f0;
+      font-weight: 100;
+    }
+
+    h1 span {
+      /* color: #f1c40f; */
+      font-weight: 100;
     }
 
     h2 {
-      margin: 5% 0;
+      margin: 7% 0 4% 0;
+      font-size: 40px;
+      font-family: dotCN;
+      font-weight: 100;
     }
 
     main {
@@ -37,7 +48,7 @@
     img {
       max-width: 100%;
       height: auto;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
     }
 
     p {
@@ -58,42 +69,64 @@
 
 <body>
   <div class="popupBox">
-    <h1>Gaudi Vision</h1>
-    <div class="layui-carousel" id="test1">
+    <h1><span style="font-family: dotCN;">高迪视界 |</span> Gaudi Vision</h1>
+    <div class="layui-carousel" id="test1" style="background-color:#000 ;">
       <div carousel-item>
         <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
-        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
-        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
-        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
-        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
-        <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div>
+        <div><img src="./assets/pics/projects/gaudi-vision/3.jpg"></div>
+        <div><img src="./assets/pics/projects/gaudi-vision/1.jpg"></div>
+        <div><img src="./assets/pics/projects/gaudi-vision/2.jpg"></div>
+        <div><img src="./assets/pics/projects/gaudi-vision/4.png"></div>
+        <!-- <div><img src="./assets/pics/projects/gaudi-vision/gaudi-vision.jpg"></div> -->
       </div>
     </div>
 
-    <h2>Project Background</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc auctor, aliquet nisl sed, tincidunt nunc.
-      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
-      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
-      auctor, aliquet nisl sed, tincidunt nunc.
-      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
-      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
-      auctor, aliquet nisl sed, tincidunt nunc.
-      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
-      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
-      auctor, aliquet nisl sed, tincidunt nunc.
-      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
-      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
-      auctor, aliquet nisl sed, tincidunt nunc.
-      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
-      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
-      auctor, aliquet nisl sed, tincidunt nunc.
-      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
-      justo auctor, aliquam nunc id, aliquet nisl.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec nunc
-      auctor, aliquet nisl sed, tincidunt nunc.
-      Nulla facilisi. Fusce id justo auctor, aliquam nunc id, aliquet nisl. Sed id semper nunc. Nulla facilisi. Fusce id
-      justo auctor, aliquam nunc id, aliquet nisl.</p>
-    <h2>Project Images</h2>
 
+
+    <h2>项目简介</h2>
+    <p>#Python, HTML, CSS, JavaScript, Diffusion Model, LCM-Lora Model, Fine-tuning, ComfyUI
+      <br><br>
+      “高迪视界”是一个融合前沿AI技术与艺术传承的交互式体验项目，旨在通过数字技术延续建筑大师安东尼·高迪的独特风格。项目依托Diffusion模型和Lora模型，开发了
+      一个用户友好的图像转绘系统，观众可以上传任意建筑图片，系统会将其实时转换为具有高迪风格的艺术作品。
+      <br><br>
+      该项目目前在中国建筑科技馆《高迪：瞬时即永恒》特别展览展出。
+    </p>
+
+    <h2>项目特色</h2>
+    <p>
+      · 项目成功将现代建筑与高迪的经典风格相结合，使用户能够通过简单的交互体验到高迪的艺术精髓。<br>
+      <br>
+      · 通过AI生成的方式，项目不仅展示了高迪风格的复杂性，还通过技术手段将这一风格扩展到全新的创作领域。<br>
+      <br>
+      · 该项目借助AI技术，为历史文化遗产的数字化传播提供了一种解决方案。
+    </p>
+    <h2>项目背景</h2>
+    <p>“高迪视界”项目的灵感源自AI在艺术与交互媒体领域的迅猛发展。类似于Google
+      DeepDream、Artbreeder等AI平台展示了通过分析图像模式和合成视觉艺术的能力，开创了艺术与技术结合的全新可能。同时，受创意团体teamLab的启发，本项目旨在融合技术、设计与自然，创造沉浸式的互动体验。随着Stable
+      Diffusion、DALL-E和Midjourney等AI工具的普及，公众对于AI生成艺术的兴趣日益增长。本项目希望借助AI的生成能力，延续建筑大师安东尼·高迪的艺术遗产，并通过数字技术让更多人接触并理解他的独特风格。
+      <br>
+      <br>
+      高迪的建筑作品因其自然的形态、丰富的色彩和细致的结构而闻名，然而这些伟大的艺术遗产面临被少数人欣赏或局限于历史研究的风险。本项目旨在通过AI技术重现并推广高迪的建筑风格，让这一非凡的艺术成就能够以现代的方式走进大众视野，并与数字时代的观众产生共鸣。
+    </p>
+    <h2>技术框架与工具</h2>
+    <p>
+      前端开发：使用HTML、CSS、JavaScript，创建用户界面，允许用户通过扫描屏幕二维码利用移动设备上传自己的建筑图片。
+      <br>
+      <br>
+      后端开发：使用Python开发了图像文件管理系统。
+      <br>
+      <br>
+      AIGC开发：基于ComfyUI，利用Diffusion模型（RealisticVision）与双ControlNet模型（Depth &
+      Canny），结合自训练Lora模型对高迪风格进行微调。项目迭代了10多个版本，搭建了30多个工作节点，以确保生成效果最大限度接近高迪的建筑风格。
+      <br>
+    </p>
+
+    <h2>项目作者</h2>
+    <p>叶进然 | 创作者、全栈开发者</p>
+
+    <h2>更多信息</h2>
+    <p>  
+      <a href="https://github.com/Hyperillion/Gaudi-Vision" target="_blank">Github仓库</a></p>
   </div>
 
 

@@ -81,3 +81,31 @@
 	/* font-weight: normal;
 	font-style: normal; */
 }
+
+@font-face {
+	font-family:Smooch Sans;
+	src:url("SmoochSans/SmoochSans.ttf");
+	/* font-weight: normal;
+	font-style: normal; */
+}
+
+@font-face {
+	font-family:dotCN;
+	src:url("dotCN/dotCN.woff2");
+	/* font-weight: normal;
+	font-style: normal; */
+}
+
+@font-face {
+	font-family:SourceHan;
+	src:url("SourceHan/SourceHanSF.ttf");
+	/* font-weight: normal;
+	font-style: normal; */
+}
+
+@font-face {
+	font-family:SourceHanSerif;
+	src:url("SourceHan/SourceHanSerif.ttf");
+	/* font-weight: normal;
+	font-style: normal; */
+}

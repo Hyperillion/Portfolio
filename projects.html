@@ -2,16 +2,26 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRQZVW2WYT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KRQZVW2WYT');
+    </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="icon" type="image/x-icon" href="/assets/cur/AY.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Smooch+Sans:wght@200;500;700&family=Yellowtail&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css">
     <link href="assets/Family/font.css" rel="stylesheet" type="text/css">
     <link href="lightbox/dist/css/lightbox.css" rel="stylesheet" />
@@ -100,121 +110,129 @@
             <h1 class="title">Projects</h1>
         </div>
         <div class="timeline">
-            <div class="item" data-text="July 2024">
-                <button class="showPopup" onclick="displayPopup('./assets/pics/projects/gaudi-vision/gaudi-vision.html')">
+            <!-- <div class="item" data-text="Sept 2024">
+                <button class="showPopup"
+                    onclick="displayPopup('./assets/pics/projects/gaudi-vision/gaudi-vision.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/gaudi-vision/gaudi-vision.jpg" alt="" class="img">
-                        <h2 class="contentTitle">Gaudi Vision</h2>
-                        <p class="description">AIGC redrawing system to transform user-uploaded images into stunning
-                            Gaudi-style architectural pieces</p>
+                        <img src="assets/pics/projects/gaudi-vision/gaudi-vision.jpg" alt="" class="pjktimg">
+                        <h2 class="contentTitle">Live-Diffusion</h2>
+                        <p class="description">交互式AI图像转绘系统。项目利用Diffusion和Lora模型，将用户上传的建筑图片实时转换为高迪风格的艺术作品。</p>
+                    </div>
+                </button>
+            </div> -->
+            <div class="item" id="gaudi-vision" data-text="July 2024">
+                <button class="showPopup" id="btn-gaudi-vision"
+                    onclick="displayPopup('./assets/pics/projects/gaudi-vision/gaudi-vision.html')">
+                    <div class="content">
+                        <img src="assets/pics/projects/gaudi-vision/gaudi-vision.jpg" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">高迪视界</h2>
+                        <p class="description">交互式AI图像转绘系统。项目利用Diffusion和Lora模型，将用户上传的建筑图片实时转换为高迪风格的艺术作品。</p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="May 2024">
-                <button class="showPopup" onclick="displayPopup('./assets/pics/projects/seen/seen.html')">
+            <div class="item" data-text="May 2024" id="seen">
+                <button class="showPopup" id="btn-seen" onclick="displayPopup('./assets/pics/projects/seen/seen.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/seen/seen.jpg" alt="" class="img">
+                        <img src="assets/pics/projects/seen/seen.jpg" alt="" class="pjktimg">
                         <h2 class="contentTitle">SEE(N)</h2>
-                        <p class="description">AIGC redrawing system to transform user-uploaded images into stunning
-                            Gaudi-style architectural pieces</p>
+                        <p class="description">实验电影项目。通过“窥视癖”和“诡异感”的主题，带领观众进入一个充满怀旧和诡异气息的童年记忆世界。</p>
                     </div>
                 </button>
             </div>
 
-            <div class="item" data-text="March 2024">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" data-text="March 2024" id="unblinking">
+                <button class="showPopup" id="btn-unblinking" onclick="displayPopup('./assets/pics/projects/unblinking/unblinking.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/unblinking/unblinking.jpg" alt="" class="img">
-                        <h2 class="contentTitle">Unblinking</h2>
-                        <p class="description">AIGC redrawing system to transform user-uploaded images into stunning
-                            Gaudi-style architectural pieces</p>
+                        <img src="assets/pics/projects/unblinking/unblinking.jpg" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">无眨</h2>
+                        <p class="description">摄影装置项目。通过收集阿布扎比不同地点和型号监控摄像头，探讨监控摄像头与被监控者之间权力的不平等关系。</p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="May 2023">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" data-text="May 2023" id="beyondInkwash">
+                <button class="showPopup" id="btn-beyondInkwash"
+                    onclick="displayPopup('./assets/pics/projects/beyondInkwash/beyondInkwash.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/beyondInkwash/beyondInkwash.png" alt="" class="img">
-                        <h2 class="contentTitle">Beyond the Ink-wash</h2>
-                        <p class="description">An Interactive and Generative Project that draw real-time Ink-wash
-                            Paintings</p>
+                        <img src="assets/pics/projects/beyondInkwash/beyondInkwash.png" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">水墨之外</h2>
+                        <p class="description">交互艺术项目。将中国传统水墨画与现代编程技术相结合，用户可以通过传感器和音频输入实时生成独特的水墨画作，探索传统与现代科技的融合。</p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="February 2023">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" data-text="February 2023" id="galaxy">
+                <button class="showPopup" id="btn-galaxy" onclick="displayPopup('./assets/pics/projects/galaxy/galaxy.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/galaxy/galaxy.png" alt="" class="img">
-                        <h2 class="contentTitle">Galaxy</h2>
-                        <p class="description">An interactive coding practise about gravity simulation environment</p>
+                        <img src="assets/pics/projects/galaxy/galaxy.png" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">银河</h2>
+                        <p class="description">交互艺术项目。以宇宙为灵感，通过代码模拟星空的闪烁以及黑洞的神秘，体验万有引力定律在虚拟世界中的呈现。</p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="December 2022">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" id="cureMonster" data-text="December 2022" id="curemonster">
+                <button class="showPopup" id="btn-curemonster" onclick="displayPopup('./assets/pics/projects/cureMonster/cureMonster.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/cureMonster/curemonster.png" alt="" class="img">
+                        <img src="assets/pics/projects/cureMonster/curemonster.png" alt="" class="pjktimg">
                         <h2 class="contentTitle">Cure Monster</h2>
-                        <p class="description">A social robot provides emotional and physical company to users</p>
+                        <p class="description">社交陪伴机器人项目，旨在帮助自闭症儿童满足社交需求，提供情感与物理陪伴。</p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="October 2022">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" data-text="October 2022" id="unusualAgent">
+                <button class="showPopup" id="btn-unusualAgent"
+                    onclick="displayPopup('./assets/pics/projects/unusualAgent/unusualAgent.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/unusualAgent/unusualAgent.jpg" alt="" class="img">
-                        <h2 class="contentTitle">Unusual Agent</h2>
-                        <p class="description">A legal education film about the unauthorized use of the official seal
+                        <img src="assets/pics/projects/unusualAgent/unusualAgent.jpg" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">非常代理人</h2>
+                        <p class="description">普法微电影。讲述了一个未经授权使用公章的故事，通过生动的演绎传达了法律知识。
                         </p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="June 2022">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" data-text="June 2022" id="antidote">
+                <button class="showPopup" id="btn-antidote" onclick="displayPopup('./assets/pics/projects/antidote/antidote.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/antidote/antidote.jpg" alt="" class="img">
-                        <h2 class="contentTitle">Antidote</h2>
-                        <p class="description">A short drama film about the distortion of human nature under the
-                            pandemic
+                        <img src="assets/pics/projects/antidote/antidote.jpg" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">送药人</h2>
+                        <p class="description">短剧电影。讲述了一个在疫情期间配送特效药时发生的故事，展示了人性在危机时刻的真实一面。
                         </p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="May 2022">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" data-text="May 2022" id="imaging">
+                <button class="showPopup" id="btn-imaging" onclick="displayPopup('./assets/pics/projects/imaging/imaging.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/imaging/imaging.png" alt="" class="img">
-                        <h2 class="contentTitle">Imaging</h2>
-                        <p class="description">A web based photography simulation project</p>
+                        <img src="assets/pics/projects/imaging/imaging.png" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">映像</h2>
+                        <p class="description">交互艺术项目。将摄影体验用网页实现，让观众体验摄影乐趣。</p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="April 2022">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" data-text="April 2022" id="LIFE">
+                <button class="showPopup" id="btn-LIFE" onclick="displayPopup('./assets/pics/projects/life/life.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/life/LIFE.png" alt="" class="img">
-                        <h2 class="contentTitle">LIFE: From small To Big</h2>
-                        <p class="description">An interactive coding artwork that presents the whole procedure of the
-                            life
-                            of cells</p>
+                        <img src="assets/pics/projects/life/LIFE.png" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">生<br>以小及大</h2>
+                        <p class="description">交互艺术项目。项目展示细胞从诞生到死亡的生命全过程，并借此探讨后疫情时代个体与权力关系。</p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="February 2022">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" data-text="February 2022" id="webSketchpad">
+                <button class="showPopup" id="btn-webSketchpad"
+                    onclick="displayPopup('./assets/pics/projects/webSketchpad/webSketchpad.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/webSketchpad/sketchpad.jpg" alt="" class="img">
-                        <h2 class="contentTitle">Web Sketchpad</h2>
-                        <p class="description">An online sketchpad with several basic functions</p>
+                        <img src="assets/pics/projects/webSketchpad/sketchpad.jpg" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">网页画板</h2>
+                        <p class="description">拥有基础功能的网页画板</p>
                     </div>
                 </button>
             </div>
-            <div class="item" data-text="September 2021">
-                <button class="showPopup" onclick="displayPopup()">
+            <div class="item" data-text="September 2021" id="leaveTheDoorOpen">
+                <button class="showPopup" id="btn-leaveTheDoorOpen"
+                    onclick="displayPopup('./assets/pics/projects/leaveTheDoorOpen/leaveTheDoorOpen.html')">
                     <div class="content">
-                        <img src="assets/pics/projects/leaveTheDoorOpen/ldto.jpg" alt="" class="img">
-                        <h2 class="contentTitle">Leave the Door Open</h2>
-                        <p class="description">A drama film about a vague love story</p>
+                        <img src="assets/pics/projects/leaveTheDoorOpen/ldto.jpg" alt="" class="pjktimg">
+                        <h2 class="contentTitle" style="font-family: dotCN;">门</h2>
+                        <p class="description">剧情微电影。讲述校园中一个朦胧的爱情故事。</p>
                     </div>
                 </button>
             </div>
@@ -244,6 +262,7 @@
         <table class="nav_table" width="100%" border="0">
             <tbody>
                 <tr>
+                    <th class="nav_element" scope="col"><a href="blog.html">Blog</a></th>
                     <th class="nav_element" scope="col"><a href="projects.html">Projects</a></th>
                     <th class="nav_element" scope="col"><a href="photos.html">Photos</a></th>
                     <th class="nav_element" scope="col"><a href="index.html">About Me</a></th>
@@ -251,18 +270,49 @@
             </tbody>
         </table>
     </div>
+    <div class="loadingBG">
+        <img class="loadingBar" src="assets/pics/loading-bars.svg" alt="Loading icon" />
+    </div>
+
+    <div class="mobile-overlay">
+        <p class="mobile-overlay-hint">请使用电脑访问此页面，以获得更佳的体验。</p>
+    </div>
 
     <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
     <script src="//unpkg.com/layui@2.9.16/dist/layui.js"></script>
     <script>
-        //change the background image of the shell
+        const isMobile = window.innerWidth < 768;
+        if (isMobile) {
+            // document.querySelector('.shell').style.display = 'none';
+            document.querySelector('.mobile-overlay').style.display = 'block';
+        }
+
+
+        window.onload = function () {
+            document.querySelector('.loadingBG').style.display = 'none';
+
+            // Get the current URL hash (everything after the #)
+            const hash = window.location.hash;
+
+            // Check if the hash is "#triggerButton"
+            // Get the button element by its id
+            if (hash) {
+                const button = document.getElementById(hash.replace('#', 'btn-'));
+                // Trigger the click event on the button
+                if (button) {
+                    button.click();
+                }
+
+            }
+        };
+
         (function ($) {
             $.fn.timeline = function () {
                 var selectors = {
                     id: $(this),
                     item: $(this).find(".item"),
                     activeClass: "item--active",
-                    img: ".img"
+                    img: ".pjktimg"
                 };
                 selectors.item.eq(0).addClass(selectors.activeClass);
                 selectors.id.css(
@@ -328,34 +378,41 @@
 
 
         let popupHTML = '<div>fetch error</div>';
+        let havePoped = false;
+        if (havePoped === false) {
+            function displayPopup(targeturl) {
+                havePoped = true;
+                loadHTML(targeturl).then(() => {
+                    layui.use(function () {
+                        var layer = layui.layer;
+                        var util = layui.util;
+                        var $ = layui.$;
 
-        function displayPopup(targeturl) {
-            loadHTML(targeturl).then(() => {
-                layui.use(function () {
-                    var layer = layui.layer;
-                    var util = layui.util;
-                    var $ = layui.$;
-
-                    layer.open({
-                        type: 1,
-                        title: false,
-                        offset: 'r',
-                        anim: 'slideLeft', // 从右往左
-                        area: ['65%', '100%'],
-                        shade: 0.000000001,
-                        // fixed: true,
-                        shadeClose: true,
-                        // scrollbar: false,
-                        // content: $('#shell'),
-                        content: popupHTML,
-                        move: false,
-                        resize: false,
-                        closeBtn: 0,
+                        layer.open({
+                            type: 1,
+                            title: false,
+                            offset: 'r',
+                            anim: 'slideLeft', // 从右往左
+                            area: ['65%', '100%'],
+                            shade: 0.000000001,
+                            // fixed: true,
+                            shadeClose: true,
+                            // scrollbar: false,
+                            // content: $('#shell'),
+                            content: popupHTML,
+                            move: false,
+                            resize: false,
+                            closeBtn: 0,
+                            end: function () {
+                                havePoped = false;
+                            }
+                        });
                     });
                 });
-            });
 
+            }
         }
+
 
         function loadHTML(targeturl) {
             // 使用 fetch 获取 HTML 内容并返回 Promise
@@ -377,37 +434,6 @@
                     console.error('获取外部 HTML 时出错:', error);
                 });
         }
-
-        // layui.use(function () {
-        //     var layer = layui.layer;
-        //     var util = layui.util;
-        //     var $ = layui.$;
-
-        //     // layer.title('Projects', index);
-        //     // 事件
-        //     util.on('lay-on', {
-        //         'popup': function () {
-        //             // loadHTML().then(() => {
-        //                 layer.open({
-        //                     type: 1,
-        //                     title: false,
-        //                     offset: 'r',
-        //                     anim: 'slideLeft', // 从右往左
-        //                     area: ['65%', '100%'],
-        //                     shade: 0.000000001,
-        //                     // fixed: true,
-        //                     shadeClose: true,
-        //                     // scrollbar: false,
-        //                     // content: $('#shell'),
-        //                     content: popupHTML,
-        //                     move: false,
-        //                     resize: false,
-        //                     closeBtn: 0,
-        //                 });
-        //             // });
-        //         },
-        //     });
-        // });
     </script>
 
 </body>
